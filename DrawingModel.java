@@ -34,9 +34,16 @@ public class DrawingModel {
 			// CREATE IT AND ADD IT TO MODEL
 			c = new CircleShape();
 			this.add(c);
-
-      c = new RadiusChangingCircle();
-      this.add(c);
+			// Tirtho's circle
+			c = new SpeedChange();
+			this.add(c);
+			// Sagar's circle
+			c = new SagarCircle();
+			this.add(c);
+			// Julian's circle
+			c = new CrazyCircle();
+			this.add(c);
+			// Andrews' circle
 
 		}
 	}
