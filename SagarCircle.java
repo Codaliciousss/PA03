@@ -14,7 +14,8 @@ public class SagarCircle extends CircleShape
         // change the properties of the CircleShape after dt seconds have elapsed.
         this.x += dt*vx;  // for now they do not move
         this.y += dt*vy;
-
+        System.out.println("e: " + e);
+        System.out.println("Radius " + radius);
         this.keepOnBoard();
         if(e > boardWidth && e > boardHeight)
         {
@@ -30,7 +31,7 @@ public class SagarCircle extends CircleShape
             this.vx = -this.vx;
             this.x = this.radius;
             e += 10;
-            radius = e;
+            radius = e;           
             
         }
         else if (this.x > CircleShape.boardWidth-this.radius) 
@@ -49,7 +50,6 @@ public class SagarCircle extends CircleShape
             this.y = this.radius;
             e += 10;
             radius = e;
-
         } 
         else if (this.y > CircleShape.boardHeight-this.radius) 
         {
